@@ -65,7 +65,7 @@ def main():
     if choice == "1":
 
         os.system('title Ip look up')
-        # This Is A Max Ip Lookup From My Tool
+        
         ipv2 = input(Colorate.Horizontal(Colors.purple_to_blue, "                               IP: "))
         response = requests.get(f"https://ipwho.is/{ipv2}")
         data = response.json()
@@ -108,4 +108,5 @@ def main():
         main()
 
 if __name__ == "__main__":
+
     main()
